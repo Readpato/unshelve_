@@ -10,6 +10,8 @@
     "@nuxtjs/tailwindcss": "^5.1.2",
     "eslint": "^8.17.0",
     "eslint-plugin-nuxt": "^3.2.0",
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "3.0.0-rc.3",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.11"
   }
 }
