@@ -1,6 +1,6 @@
 <template>
-  <main class="flex flex-col items-center justify-center">
-    <div>
+  <main class="flex flex-col items-center justify-center space-y-2">
+    <div class="mt-14">
       <img
         class="h-auto max-w-full"
         src="@/assets/main-image.png"
@@ -8,7 +8,7 @@
       />
     </div>
     <div
-      class="flex flex-col items-center justify-center space-y-3 text-center"
+      class="flex flex-col items-center justify-center space-y-2 text-center"
     >
       <h1 class="text-3xl font-semibold">Share those moments</h1>
       <p class="w-72 p-1 text-lg">
