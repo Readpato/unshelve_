@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
-import { ref } from "vue";
+  import { Icon } from '@iconify/vue'
+  import { ref } from 'vue'
 
-const isModalShown = ref(false);
+  const isModalShown = ref(false)
 
-function showModal() {
-  isModalShown.value = !isModalShown.value;
-}
+  const showModal = (): void => {
+    isModalShown.value = !isModalShown.value
+  }
 </script>
 
 <template>
