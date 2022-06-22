@@ -54,3 +54,40 @@ describe('Navigation bar', () => {
       .and('not.be.visible')
   })
 })
+describe('Main page', () => {
+  it('Assess that the main elements exist throught different viewports', () => {
+    cy.viewport('macbook-16')
+    cy.get('[data-cy=main-image]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-title]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-title]').should('contain.text', 'Share those moments')
+    cy.get('[data-cy=main-paragraph]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-paragraph]').should(
+      'contain.text',
+      'Unshelve the books you love and tell us your experience'
+    )
+    cy.get('[data-cy=main-button]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-button]').should('contain.text', 'Start now')
+    cy.viewport('ipad-mini')
+    cy.get('[data-cy=main-image]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-title]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-title]').should('contain.text', 'Share those moments')
+    cy.get('[data-cy=main-paragraph]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-paragraph]').should(
+      'contain.text',
+      'Unshelve the books you love and tell us your experience'
+    )
+    cy.get('[data-cy=main-button]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-button]').should('contain.text', 'Start now')
+    cy.viewport('iphone-7')
+    cy.get('[data-cy=main-image]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-title]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-title]').should('contain.text', 'Share those moments')
+    cy.get('[data-cy=main-paragraph]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-paragraph]').should(
+      'contain.text',
+      'Unshelve the books you love and tell us your experience'
+    )
+    cy.get('[data-cy=main-button]').should('exist').and('be.visible')
+    cy.get('[data-cy=main-button]').should('contain.text', 'Start now')
+  })
+})
